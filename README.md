@@ -171,10 +171,25 @@ python test_simple_driver.py
 
 ### 4. **Built-in Progress Tracking**
 ```bash
-⏱️  35.2m | Events: 139,237 | Speed: 66.0/s | Progress: 100.0%
-✅ Progress update: 139,237 events collected
-📁 Latest file: complete_direct_js_scraper_139237_events.csv
-🎉 SCRAPER COMPLETED!
+🚀 Worker 39: Starting range 09/19/2024 to 12/18/2024 (attempt 1)
+🔄 Trying System ChromeDriver...
+✅ Successfully created driver using System ChromeDriver
+🌐 Worker 39: Loading investing.com...
+📅 Setting date range directly: 09/19/2024 to 12/18/2024
+   JavaScript execution result: Date inputs set, pending reload
+   🔄 Reloading page with new URL: https://www.investing.com/economic-calendar/?dateFrom=2024-09-19&dateTo=2024-12-18
+✅ Events found after date setting
+📜 Loading all events by scrolling...
+   Scroll 1: 3763 events loaded
+✅ All events loaded: 3763 total
+📊 Worker 39: Extracting 3763 events...
+   Worker 39: Processed 100/3763 events
+   Worker 39: Processed 200/3763 events
+   ...
+   Worker 39: Processed 3700/3763 events
+✅ Worker 39: Successfully extracted 3763 events
+✅ Completed 29/43: 09/19/2024 to 12/18/2024 (3763 events)
+💾 Saved 130173 events to checkpoint_direct_js_130173_events_20250913_174103.csv
 ```
 
 ### 5. **Automatic Recovery**
